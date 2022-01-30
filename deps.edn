@@ -1,0 +1,5 @@
+{:paths ["src"]
+ :deps
+ {com.github.discljord/discljord
+  {:git/url "git@github.com:IGJoshua/discljord.git"
+   :sha "2fd21650e20f8c3aa88b702b8a3eb0a0d0b861a7"}}}

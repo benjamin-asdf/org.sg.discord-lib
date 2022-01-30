@@ -1,0 +1,12 @@
+.classpath
+.clj-kondo/.cache
+.cpcache
+.hgignore
+.java-version
+.nrepl-history
+.nrepl-port
+.project
+.settings
+.socket-repl-port
+*.class
+*.jar
