@@ -1,5 +1,5 @@
 (ns
-    src.org.sg.discord-lib.utils
+    org.sg.discord-lib.utils
     (:require
      [cognitect.anomalies
       :as
@@ -181,8 +181,6 @@
                   (transient {}))
                 m))
     (meta m)))
-
-
 
 
 (comment)
