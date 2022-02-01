@@ -1,8 +1,13 @@
-(ns src.org.sg.discord-lib.utils
-  (:require
-   [clojure.spec.alpha :as s]
-   [clojure.pprint]
-   [clojure.core.async :as a]))
+(ns
+    src.org.sg.discord-lib.utils
+    (:require
+     [cognitect.anomalies
+      :as
+      anomalies]
+     [clojure.string :as str]
+     [clojure.spec.alpha :as s]
+     [clojure.pprint]
+     [clojure.core.async :as a]))
 
 (defn
   <throttle
