@@ -1,4 +1,4 @@
-(ns src.org.sg.discord-lib.core)
+(ns org.sg.discord-lib.core)
 
 (defn
   msg-ref
