@@ -16,7 +16,6 @@
     :guild_id guild-id
     :message_id id}))
 
-
 (defn
   snowflake->age-ms
   [id]
