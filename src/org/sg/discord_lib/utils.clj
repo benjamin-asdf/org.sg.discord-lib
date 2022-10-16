@@ -164,23 +164,3 @@
                     (Thread/sleep ms)
                     (recur (inc epoch)))
                   (throw e)))))))
-
-;; thanks clojure.core
-
-(defn update-vals
-  "m f => {k (f v) ...}
-
-  Given a map m and a function f of 1-argument, returns a new map where the keys of m
-  are mapped to result of applying f to the corresponding values of m."
-  [m f]
-  (with-meta
-    (persistent!
-     (reduce-kv (fn [acc k v] (assoc! acc k (f v)))
-                (if (instance? clojure.lang.IEditableCollection m)
-                  (transient m)
-                  (transient {}))
-                m))
-    (meta m)))
-
-
-(comment)
